@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-between;
     padding: 40px;
@@ -52,22 +52,33 @@ nav ul a {
     color: #CB0361;
 }
 
-.pagina-nombre {
+main {
     width: 100%;
-    height: 150px;
+}
+
+.pagina-nombre {
+    height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: black;
     color: white;
-
+    padding: 40px;
+    font-size: 28px;
 }
 
-.pagina-nombre p {
-    font-size: 60px;
+
+.pagina-nombre .fa-solid {
+    font-size: 45px;
     color: white;
     padding: 3px 10px;
     cursor: pointer;
+}
+
+.espacio-interactivo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .categorias {
@@ -80,23 +91,72 @@ nav ul a {
 
 .categorias div {
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
-.espacio-interactivo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.categorias div input {
+    margin-right: 5px;
 }
 
 .busqueda {
+    height: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 
-.busqueda a i {
-    font-size: 18px;
+.busqueda input {
+    width: 250px;
+    border-radius: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+
+.busqueda a {
+    font-size: 20px;
     color: #CB0361;
-    margin: 5px;
+    margin: 5px ;
+    text-align: center;
+
+}
+
+footer {
+    width: auto;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.border-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 150px;
+    background-color: black;
+    color: white;
+}
+
+.border-footer h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.iconos {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 30px;
+}
+
+.copy {
+    font-size: 13px;
 }
