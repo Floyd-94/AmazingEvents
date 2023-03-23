@@ -1,25 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 #tarjetas {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 #tarjetas > div {
     width: 400px;
     height: 410px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin: 20px;
+    box-shadow: 1px 1px 10px black;
+    padding: 15px;
+    margin: 25px;
     display: flex;
     flex-direction: column;
-
+    color: rgb(0, 0, 0);
 }
 
 #tarjetas > div img {
@@ -37,7 +33,6 @@
     height: 50px;
     text-align: justify;
     padding: 10px;
-
 }
 
 #tarjetas .preciodiv {
@@ -51,6 +46,7 @@
 
 #tarjetas .preciodiv h3 {
     width: 100px;
+    color: #CB0361;
 }
 
 #tarjetas .preciodiv a {
@@ -58,10 +54,14 @@
     text-align: center;
     width: 100px;
     height: 20px;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 5px black;
     padding: 5px;
     color: black ;
     border-radius: 10px;
+    transition: 1s;
+}
 
-    
+#tarjetas .preciodiv a:hover {
+    box-shadow: 0px 0px 10px #CB0361;
+    color: #CB0361;
 }

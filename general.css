@@ -7,17 +7,19 @@ body {
     width: 100%;
     height: 100vh;
     font-family: Arial;
+    font-size: 17px;
 }
 
 header {
     width: auto;
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 30px;
+    background-color: rgba(250, 252, 255, 0.725);
 }
 
 .logo {
-    width: 190px;
+    width: 180px;
 }
 
 nav {
@@ -35,25 +37,24 @@ nav ul {
 
 nav ul li {
     margin: 10px;
-    background-color: white;
-    text-decoration-color: #CB0361;
     transition: 0.5s;
 }
 
-nav ul li:hover {
-    text-decoration: underline;
-    text-decoration-color: #CB0361;
-    border-radius: 5px;
-
-}
-
 nav ul a {
+    font-size: 20px;
     text-decoration: none;
     color: #CB0361;
+    transition: 1s;
+}
+
+nav ul a:hover {
+    font-size: 22px;
 }
 
 main {
     width: 100%;
+    background-color: rgba(250, 252, 255, 0.725);
+    margin-bottom: 100px;
 }
 
 .pagina-nombre {
@@ -61,16 +62,25 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: white;
     padding: 40px;
-    font-size: 28px;
+    background-image: url("Recursos Amazing Events/triangles-gb608053ab_1280.png");
+    background-size: 100vw;
 }
 
+.pagina-nombre h1 {
+    color: rgb(250, 252, 255);
+    font-size: 50px;
+    transition: 1s;
+}
+
+.pagina-nombre h1:hover {
+    font-size: 60px;
+
+}
 
 .pagina-nombre .fa-solid {
     font-size: 45px;
-    color: white;
+    color: rgb(250, 252, 255);
     padding: 3px 10px;
     cursor: pointer;
 }
@@ -87,13 +97,23 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    color: rgb(0, 0, 0);
 }
 
 .categorias div {
     margin: 10px;
     display: flex;
     align-items: center;
+    transition: 0.5s;
 }
+
+.categorias div:hover {
+    color: #CB0361;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
 
 .categorias div input {
     margin-right: 5px;
@@ -113,21 +133,20 @@ main {
     padding-left: 5px;
 }
 
-
 .busqueda a {
     font-size: 20px;
     color: #CB0361;
-    margin: 5px ;
+    margin: 5px;
     text-align: center;
-
 }
 
 footer {
     width: auto;
-    height: 200px;
+    height: 170px;
     position: relative;
     display: flex;
     align-items: end;
+    background-color: black;
 }
 
 .border-footer {
@@ -137,7 +156,6 @@ footer {
     align-items: center;
     padding: 20px;
     margin-top: 150px;
-    background-color: black;
     color: white;
 }
 
