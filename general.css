@@ -57,7 +57,7 @@ main {
     margin-bottom: 100px;
 }
 
-.pagina-nombre {
+#pagina-nombre {
     height: 120px;
     display: flex;
     justify-content: space-between;
@@ -67,18 +67,18 @@ main {
     background-size: 100vw;
 }
 
-.pagina-nombre h1 {
+#pagina-nombre h1 {
     color: rgb(250, 252, 255);
     font-size: 50px;
     transition: 1s;
 }
 
-.pagina-nombre h1:hover {
+#pagina-nombre h1:hover {
     font-size: 60px;
 
 }
 
-.pagina-nombre .fa-solid {
+#pagina-nombre .fa-solid {
     font-size: 45px;
     color: rgb(250, 252, 255);
     padding: 3px 10px;
@@ -92,7 +92,8 @@ main {
 }
 
 .categorias {
-    width: 700px;
+    width: 100%;
+    max-width: 900px;
     height: 120px;
     display: flex;
     flex-wrap: wrap;
@@ -101,16 +102,19 @@ main {
 }
 
 .categorias div {
+    width: 200px;
     margin: 10px;
     display: flex;
     align-items: center;
     transition: 0.5s;
+   box-sizing: border-box;
+
 }
 
 .categorias div:hover {
     color: #CB0361;
     padding-left: 10px;
-    padding-right: 10px;
+   
     border-radius: 15px;
 }
 

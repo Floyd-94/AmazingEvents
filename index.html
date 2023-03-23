@@ -23,11 +23,11 @@
         <img class="logo" src="./Recursos Amazing Events/Logo Amazing Events.png" alt="Logo del sitio">
         <nav>
             <ul>
-                <li><a class="navlink" href="#" id="Home">Home</a>
+                <li><a class="navlink" href="index.html" id="Home">Home</a>
                 </li>
-                <li><a class="navlink" href="#" id="Upcoming-Events">Upcoming Events</a>
+                <li><a class="navlink" href="upcomingevents.html" id="Upcoming-Events">Upcoming Events</a>
                 </li>
-                <li><a class="navlink" href="#" id="Past-Events">Past Events</a>
+                <li><a class="navlink" href="pastevents.html" id="Past-Events">Past Events</a>
                 </li>
                 <li><a href="contact.html">Contact</a>
                 </li>
@@ -37,10 +37,10 @@
         </nav>
     </header>
     <main>
-        <div class="pagina-nombre">
-            <a href=""><i class="fa-solid fa-less-than"></i></a>
-            <h1>HOME</h1> <!-- tiene todos los eventos-->
-            <a href=""><i class="fa-solid fa-greater-than"></i></a>
+        <div id="pagina-nombre">
+            <i class="fa-solid fa-less-than"></i>
+            <h1 id="pagina-titulo">HOME</h1> <!-- tiene todos los eventos-->
+            <i class="fa-solid fa-greater-than"></i>
         </div>
         <section class="espacio-interactivo">
             <div class="categorias">
@@ -62,15 +62,15 @@
                 </div>
                 <div>
                     <input type="checkbox" name="category" id="category">
-                    <label for="category">Carrera</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="category" id="category">
                     <label for="category">Intercambio de Libros</label>
                 </div>
                 <div>
                     <input type="checkbox" name="category" id="category">
                     <label for="category">Vamos al Cine</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="category" id="category">
+                    <label for="category">Carrera</label>
                 </div>
             </div>
             <div class="busqueda">
@@ -80,9 +80,9 @@
                 </a>
             </div>
         </section>
-        <section id="tarjetas">
 
-        </section>
+        <section id="tarjetas"></section>
+
     </main>
     <footer>
         <div class="border-footer">
@@ -100,6 +100,7 @@
     </footer>
     <script src="./AmazingEvents.js"> </script>
     <script src="index.js"></script> <!-- por como corre js debe ir en ese orden-->
+    <script src="home.js"></script>
 </body>
 
 </html>

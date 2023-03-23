@@ -1,7 +1,7 @@
-const dataAmazing = { //objeto con variables
+const dataAmazing = { 
   "fechaActual": "2022-01-01",
   "eventos": [
-    { // objetos guardados dentro del array
+    { 
       "id": 1,
       "image":"Feria de comidas7.jpg",
       "name": "Fiesta de las colectividades",
