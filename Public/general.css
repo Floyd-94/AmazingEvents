@@ -250,6 +250,29 @@ footer {
         font-size: 17px;
     }
 
+    .espacio-interactivo {
+        flex-direction: column-reverse;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .categorias div {
+        width: 160px;
+    }
+
+    .busqueda {
+        padding-right: 20px;
+        justify-content: center;
+    }
+
+    .busqueda input {
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width: 500px) {
