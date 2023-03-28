@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 #tarjetas > div {
@@ -64,4 +63,16 @@
 #tarjetas .preciodiv a:hover {
     box-shadow: 0px 0px 10px #CB0361;
     color: #CB0361;
+}
+
+@media (max-width: 500px) {
+
+    #tarjetas > div img {
+        width: 300px;
+    }
+    
+    #tarjetas > div p {
+        font-size: 16px;
+    }
+
 }

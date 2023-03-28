@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgba(250, 252, 255, 0.725);
+}
+
+.logo {
+    width: 180px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.ul {
+    display: flex;
+}
+
+
+nav ul li {
+    margin: 10px;
+    transition: 0.5s;
+}
+
+nav ul a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #CB0361;
+    transition: 1s;
+}
+
+nav ul a:hover {
+    font-size: 22px;
+}
+
+main {
+    width: 100%;
+    background-color: rgba(250, 252, 255, 0.725);
+    margin-bottom: 100px;
+}
+
+#pagina-nombre {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-image: url("Recursos Amazing Events/triangles-gb608053ab_1280.png");
+    background-size: 100vw;
+}
+
+#pagina-nombre h1 {
+    color: rgb(250, 252, 255);
+    font-size: 50px;
+    transition: 1s;
+}
+
+#pagina-nombre h1:hover {
+    font-size: 60px;
+
+}
+
+#pagina-nombre .fa-solid {
+    font-size: 45px;
+    color: rgb(250, 252, 255);
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.espacio-interactivo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categorias {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.categorias div {
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+
+}
+
+.categorias div:hover {
+    color: #CB0361;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.categorias div label {
+    font-size: 15px;
+}
+
+.categorias div input {
+    margin-right: 5px;
+}
+
+.busqueda {
+    height: 30px;
+    display: flex;
+    padding: 30px;
+}
+
+.busqueda input {
+    width: 250px;
+    border-radius: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.busqueda a {
+    color: #CB0361;
+    margin: 5px;
+    text-align: center;
+}
+
+footer {
+    width: auto;
+    height: 170px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.border-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+}
+
+.border-footer h3 {
+    font-size: 20px;
+}
+
+.iconos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.copy {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .busqueda input {
+        width: 170px;
+    }
+
+    .categorias div label {
+        font-size: 13px;
+    }
+
+    nav ul li {
+        margin: 6px;
+    }
+
+    nav ul a {
+        font-size: 18px;
+
+    }
+
+    nav ul a:hover {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .logo {
+        width: 140px;
+    }
+
+    #pagina-nombre h1 {
+        font-size: 35px;
+    }
+    
+    #pagina-nombre h1:hover {
+        font-size: 45px;
+    }
+    
+    #pagina-nombre .fa-solid {
+        font-size: 35px;
+    }
+
+    .busqueda input {
+        width: 170px;
+    }
+
+    .categorias div label {
+        font-size: 13px;
+    }
+
+    nav ul a {
+        font-size: 15px;
+    }
+
+    nav ul a:hover {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        height: fit-content;
+    }
+
+    .div-logo {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .ul2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul a {
+        font-size: 14px;
+    }
+
+    nav ul a:hover {
+        font-size: 16px;
+    }
+
+    .espacio-interactivo {
+        flex-direction: column-reverse;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .categorias div {
+        width: 160px;
+    }
+
+    .busqueda {
+        padding-right: 20px;
+        justify-content: center;
+    }
+
+    .busqueda input {
+        font-size: 13px;
+    }
+
+    #pagina-nombre {
+        padding: 20px;
+    }
+
+    #pagina-nombre h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    #pagina-nombre h1:hover {
+        font-size: 30px;
+    }
+    
+    #pagina-nombre .fa-solid {
+        font-size: 25px;
+    }
+
+    .border-footer {
+        padding: 20px;
+    }
+
+    .border-footer h3 {
+        font-size: 15px;
+    }
+
+    .copy {
+        font-size: 11px;
+    }
+
+}

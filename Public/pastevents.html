@@ -20,26 +20,32 @@
 <body>
 
     <header>
-        <img class="logo" src="./Recursos Amazing Events/Logo Amazing Events.png" alt="Logo del sitio">
+        <div class="div-logo">
+            <img class="logo" src="./Recursos Amazing Events/Logo Amazing Events.png" alt="Logo del sitio">
+        </div>
         <nav>
             <ul>
-                <li><a class="navlink" href="index.html" id="Home">Home</a>
-                </li>
-                <li><a class="navlink" href="upcomingevents.html" id="Upcoming-Events">Upcoming Events</a>
-                </li>
-                <li><a class="navlink" href="pastevents.html" id="Past-Events">Past Events</a>
-                </li>
-                <li><a href="contact.html">Contact</a>
-                </li>
-                <li><a href="stats.html">Stats</a>
-                </li>
+                <div class="ul ul1">
+                    <li><a class="navlink" href="index.html" id="Home">Home</a>
+                    </li>
+                    <li><a class="navlink" href="upcomingevents.html" id="Upcoming-Events">Upcoming Events</a>
+                    </li>
+                    <li><a class="navlink" href="pastevents.html" id="Past-Events">Past Events</a>
+                    </li>
+                </div>
+                <div class="ul ul2">
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                    <li><a href="stats.html">Stats</a>
+                    </li>
+
             </ul>
         </nav>
     </header>
     <main>
         <div id="pagina-nombre">
             <a href="index.html"><i class="fa-solid fa-less-than"></i></a>
-            <h1 id="pagina-titulo">UPCOMING EVENTS</h1> <!-- tiene todos los eventos-->
+            <h1 id="pagina-titulo">PAST EVENTS</h1>
             <a href="contact.html"><i class="fa-solid fa-greater-than"></i></a>
         </div>
         <section class="espacio-interactivo">
@@ -87,20 +93,23 @@
     <footer>
         <div class="border-footer">
             <div class="iconos">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <div>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <h3>ACNUR DIC 2022</h3>
             </div>
             <div class="copy">
                 <i class="fa-sharp fa-solid fa-copyright"></i>
                 <span>Samantha Saldaña 2022</span>
             </div>
-            <h3>ACNUR DIC 2022</h3>
         </div>
     </footer>
+
     <script src="./AmazingEvents.js"> </script>
     <script src="index.js"></script> <!-- por como corre js debe ir en ese orden-->
-    <script src="upcomingevents.js"></script>
+    <script src="pastevents.js"></script>
 </body>
 
 </html>

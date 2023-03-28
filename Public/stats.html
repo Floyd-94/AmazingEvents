@@ -16,30 +16,35 @@
 
 <body>
     <header>
-        <img class="logo" src="./Recursos Amazing Events/Logo Amazing Events.png" alt="Logo del sitio">
+        <div class="div-logo">
+            <img class="logo" src="./Recursos Amazing Events/Logo Amazing Events.png" alt="Logo del sitio">
+        </div>
         <nav>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a>
+            <ul>
+                <div class="ul ul1">
+                    <li><a href="index.html" id="Home">Home</a>
                     </li>
-                    <li><a href="upcomingevents.html">Upcoming Events</a>
+                    <li><a href="upcomingevents.html" id="Upcoming-Events">Upcoming Events</a>
                     </li>
-                    <li><a href="pastevents.html">Past Events</a>
+                    <li><a href="pastevents.html" id="Past-Events">Past Events</a>
                     </li>
+                </div>
+                <div class="ul ul2">
                     <li><a href="contact.html">Contact</a>
                     </li>
                     <li><a href="stats.html">Stats</a>
                     </li>
-                </ul>
-            </nav>
+
+            </ul>
+        </nav>
     </header>
     <main>
         <div id="pagina-nombre">
-            <i class="fa-solid fa-less-than"></i>
-            <h1 id="pagina-titulo">STATS</h1> 
-            <i class="fa-solid fa-greater-than"></i>
+            <a href="contact.html"><i class="fa-solid fa-less-than"></i></a>
+            <h1 id="pagina-titulo">STATS</h1>
+            <a href="contact.html" style="visibility: hidden;"><i class="fa-solid fa-greater-than"></i></a>
         </div>
-        <table border="1">
+        <table id="datos" border="1">
             <thead>
                 <tr>
                     <th>Events statistics</th>
@@ -85,15 +90,17 @@
     <footer>
         <div class="border-footer">
             <div class="iconos">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <div>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <h3>ACNUR DIC 2022</h3>
             </div>
             <div class="copy">
                 <i class="fa-sharp fa-solid fa-copyright"></i>
                 <span>Samantha Saldaña 2022</span>
             </div>
-            <h3>ACNUR DIC 2022</h3>
         </div>
     </footer>
 </body>
