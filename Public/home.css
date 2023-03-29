@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 
-#tarjetas > div {
+#tarjetas>div {
     width: 400px;
     height: 410px;
     border-radius: 10px;
@@ -17,18 +17,18 @@
     color: rgb(0, 0, 0);
 }
 
-#tarjetas > div img {
+#tarjetas>div img {
     width: 400px;
     height: 217px;
     border-radius: 10px;
 }
 
-#tarjetas > div h2 {
+#tarjetas>div h2 {
     text-align: center;
     padding: 25px;
 }
 
-#tarjetas > div p {
+#tarjetas>div p {
     height: 50px;
     text-align: justify;
     padding: 10px;
@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 #tarjetas .preciodiv h3 {
@@ -55,7 +55,7 @@
     height: 20px;
     box-shadow: 1px 1px 5px black;
     padding: 5px;
-    color: black ;
+    color: black;
     border-radius: 10px;
     transition: 1s;
 }
@@ -67,11 +67,15 @@
 
 @media (max-width: 500px) {
 
-    #tarjetas > div img {
+    #tarjetas>div {
         width: 300px;
     }
-    
-    #tarjetas > div p {
+
+    #tarjetas>div img {
+        width: 300px;
+    }
+
+    #tarjetas>div p {
         font-size: 16px;
     }
 
