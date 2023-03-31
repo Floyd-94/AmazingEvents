@@ -55,23 +55,22 @@ function display(array) {
             <p>${array[i].description}</p>
             <div class="preciodiv">
                 <h3>Total: $${array[i].price}</h3>
-                <button id="btnModal">Ver más
-                    <div id="myModal" class="modalContainer">
-                       <div class="modal-content">
-                       <span class="close"><i class="fa-solid fa-xmark"></i></span>
-                         <img class="img" src="./Recursos Amazing Events/${array[i].image}" alt="${array[i].name}">
-                         <h2>${array[i].name}</h2>
-                         
-                             <p>Fecha: ${array[i].date}</p>
-                             <p>${array[i].description}</p>
-                             <p class:"categoria">${array[i].category}</p>
-                             <p>Ubicación: ${array[i].place}</p>
-                             <p>Capacidad: ${array[i].capacity}</p>
-                             <p>Asistencia: ${array[i].capassistanceacity}</p>
-                        
-                         <h3>Total: $${array[i].price}</h3>
+                <button class="btnModal">Ver más
+                
+                    <div class="modalContainer">
+                        <div class="modal-content">
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                            <img class="img" src="./Recursos Amazing Events/${array[i].image}" alt="${array[i].name}">
+                            <h2>${array[i].name}</h2>
+                            <p>Fecha: ${array[i].date}</p>
+                            <p>${array[i].description}</p>
+                            <p>Categoria: ${array[i].category}</p>
+                            <p>Ubicación: ${array[i].place}</p>
+                            <p>Capacidad: ${array[i].capacity}</p>
+                            <h3>Total: $${array[i].price}</h3>
                         </div>
                     </div>
+
                 </button> 
             </div>
         </div>` // estas comillas hacen un string dinamico, se hacen con Altr Gr comilla
